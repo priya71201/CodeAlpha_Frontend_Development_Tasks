@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Image Gallery</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Image Gallery</h1>
+
+  <!-- Filter Buttons -->
+  <div class="filter-buttons">
+    <button onclick="filterImages('all')">All</button>
+    <button onclick="filterImages('nature')">Nature</button>
+    <button onclick="filterImages('animals')">Animals</button>
+  </div>
+
+  <!-- Gallery Grid -->
+  <div class="gallery">
+    <div class="image nature">
+      <img src="C:\Users\PRIYANSHU\OneDrive - Manipal Academy of Higher Education\Desktop\cat\ni.jpg" alt="Nature" onclick="openLightbox(this.src)" />
+<img src="C:\Users\PRIYANSHU\OneDrive - Manipal Academy of Higher Education\Desktop\cat\n2.jpg" alt="Nature" onclick="openLightbox(this.src)" />
+<img src="C:\Users\PRIYANSHU\OneDrive - Manipal Academy of Higher Education\Desktop\cat\n3.jpg" alt="Nature" onclick="openLightbox(this.src)" />
+<img src="C:\Users\PRIYANSHU\OneDrive - Manipal Academy of Higher Education\Desktop\cat\n4.jpg" alt="Nature" onclick="openLightbox(this.src)" />
+
+    </div>
+    <div class="image animals">
+      <img src="C:\Users\PRIYANSHU\OneDrive - Manipal Academy of Higher Education\Desktop\cat\i1.png" alt="Animals" onclick="openLightbox(this.src)" />
+<img src="C:\Users\PRIYANSHU\OneDrive - Manipal Academy of Higher Education\Desktop\cat\i2.png" alt="Animals" onclick="openLightbox(this.src)" />
+<img src="C:\Users\PRIYANSHU\OneDrive - Manipal Academy of Higher Education\Desktop\cat\i3.png" alt="Animals" onclick="openLightbox(this.src)" />
+<img src=""C:\Users\PRIYANSHU\OneDrive - Manipal Academy of Higher Education\Desktop\cat\i4.jpg"" alt="Animals" onclick="openLightbox(this.src)" />
+<img src="C:\Users\PRIYANSHU\OneDrive - Manipal Academy of Higher Education\Desktop\cat\i5.jpg" alt="Animals" onclick="openLightbox(this.src)" />
+
+
+    </div>
+     <div class="image nature">
+      <img src="C:\Users\PRIYANSHU\OneDrive - Manipal Academy of Higher Education\Desktop\cat\ni.jpg" alt="Nature" onclick="openLightbox(this.src)" />
+<img src="C:\Users\PRIYANSHU\OneDrive - Manipal Academy of Higher Education\Desktop\cat\n2.jpg" alt="Nature" onclick="openLightbox(this.src)" />
+<img src="C:\Users\PRIYANSHU\OneDrive - Manipal Academy of Higher Education\Desktop\cat\n3.jpg" alt="Nature" onclick="openLightbox(this.src)" />
+<img src="C:\Users\PRIYANSHU\OneDrive - Manipal Academy of Higher Education\Desktop\cat\n4.jpg" alt="Nature" onclick="openLightbox(this.src)" />
+
+    </div>
+
+     <div class="image animals">
+      <img src="C:\Users\PRIYANSHU\OneDrive - Manipal Academy of Higher Education\Desktop\cat\i1.png" alt="Animals" onclick="openLightbox(this.src)" />
+<img src="C:\Users\PRIYANSHU\OneDrive - Manipal Academy of Higher Education\Desktop\cat\i2.png" alt="Animals" onclick="openLightbox(this.src)" />
+<img src="C:\Users\PRIYANSHU\OneDrive - Manipal Academy of Higher Education\Desktop\cat\i3.png" alt="Animals" onclick="openLightbox(this.src)" />
+<img src=""C:\Users\PRIYANSHU\OneDrive - Manipal Academy of Higher Education\Desktop\cat\i4.jpg"" alt="Animals" onclick="openLightbox(this.src)" />
+<img src="C:\Users\PRIYANSHU\OneDrive - Manipal Academy of Higher Education\Desktop\cat\i5.jpg" alt="Animals" onclick="openLightbox(this.src)" />
+
+
+    </div>
+
+  </div>
+
+  <!-- Lightbox -->
+  <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+    <span class="close">&times;</span>
+    <img id="lightbox-img" />
+    <div class="nav">
+      <button onclick="navigate(-1)">❮</button>
+      <button onclick="navigate(1)">❯</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
